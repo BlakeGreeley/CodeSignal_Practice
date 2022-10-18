@@ -5,7 +5,8 @@ inputString = 'aabaa';
 function solution(inputString) {
     const x = inputString.split('')
     const y = x.reverse()
-    return y == x
+    const z = y.join('')
+    return z == inputString
 }
 
 console.log(solution(inputString));
