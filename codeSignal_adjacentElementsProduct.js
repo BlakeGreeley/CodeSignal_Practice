@@ -1,7 +1,7 @@
 // Given an array of integers, find the pair of adjacent elements 
 // that has the largest product and return that product.
 
-inputArray = [3, 6, -2, -5, 7, 3];
+inputArray = [3, 6, -18, -5, 7, 3];
 
 function solution(inputArray) {
     const newArray = []
@@ -30,5 +30,14 @@ function solution(inputArray) {
 
 console.log(solution(inputArray));
 
+// another solution
 
 
+function solution(inputArray) {
+    const x = inputArray
+    const y = x.map((value, index) => value * x[index+1])
+    const z = y.slice(0, -1)
+    return Math.max(...z)
+}
+
+console.log(solution(inputArray));
