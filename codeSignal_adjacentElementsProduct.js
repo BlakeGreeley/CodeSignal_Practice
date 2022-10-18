@@ -41,3 +41,15 @@ function solution(inputArray) {
 }
 
 console.log(solution(inputArray));
+
+// if you wanted to find the smallest output
+inputSmallArray = [3, 6, -18, -5, 7, 3];
+
+function small(inputSmallArray) {
+    const x = inputSmallArray
+    const y = x.map((value, index) => value * x[index+1])
+    const z = y.slice(0, -1)
+    return Math.min(...z)
+}
+
+console.log(small(inputSmallArray));
