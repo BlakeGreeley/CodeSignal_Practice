@@ -16,3 +16,19 @@ function solution(inputArray) {
     })
 }
 console.log(solution(inputArray));
+
+// another faster solution
+
+function solution(inputArray) {
+    const newArray = []
+    for(let i = 0; i < inputArray.length - 1; i++) {
+        const x = inputArray[i] * inputArray[i+1]
+        newArray.push(x)
+    }
+    return Math.max(...newArray)
+}
+
+console.log(solution(inputArray));
+
+
+
