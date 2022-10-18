@@ -3,7 +3,8 @@
 // and including the year 200, etc.
 
 function solution(year) {
-    const x = year/100
-    const y = Math.floor(x)
-    return y
+    const x = year + 99
+    const y = x/100
+    const z = Math.floor(y)
+    return z
 }
