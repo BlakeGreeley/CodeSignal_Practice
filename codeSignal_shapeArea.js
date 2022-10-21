@@ -6,6 +6,8 @@
 // polygon and appending 1-interesting polygons to its rim, side by side. 
 // You can see the 1-, 2-, 3- and 4-interesting polygons in the picture below.
 
+n = 5;
+
 function solution(n) {
     
     var area = 1;
@@ -15,3 +17,5 @@ function solution(n) {
     console.log("final area =" + " " + area);
     return area;
 }
+
+console.log(solution(n));
