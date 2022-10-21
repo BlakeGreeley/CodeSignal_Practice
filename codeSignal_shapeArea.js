@@ -19,3 +19,6 @@ function solution(n) {
 }
 
 console.log(solution(n));
+
+// another solution
+
