@@ -7,7 +7,11 @@
 // You can see the 1-, 2-, 3- and 4-interesting polygons in the picture below.
 
 function solution(n) {
-    // y = (n - 1) * 4
-    // z = (n * n) + y
-    // return z
+    
+    var area = 1;
+    for(var i = 1; i < n; i++) {
+        area += 4 * i;
+    }
+    console.log("final area =" + " " + area);
+    return area;
 }
