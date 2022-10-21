@@ -24,5 +24,5 @@ console.log(solution(n));
 
 function solution(n) {
     if (n === 1) return 1;
-    return solution(n-1) + 4*(n-1);
+    return 4*(n-1) + solution(n-1);
 }
