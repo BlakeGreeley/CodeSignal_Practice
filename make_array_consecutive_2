@@ -22,9 +22,3 @@ int solution(int[] sequence) {
    int n = statues[statues.length - 1] - statues[0];
    return n - statues.length + 1;
 }
-
-// another java solution:
-
-int solution(int[] statues) {
-   return statues.Max() - statues.Min() +1 - statues.Length;
-}
