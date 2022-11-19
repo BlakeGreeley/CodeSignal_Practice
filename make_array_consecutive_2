@@ -15,7 +15,7 @@ def solution(statues):
    return max(statues) - min(statues) + 1 - len(statues)
 
 
-// Java answers: 
+// Java answer: 
 
 int solution(int[] sequence) {
    Arrays.sort(statues);
@@ -23,3 +23,8 @@ int solution(int[] sequence) {
    return n - statues.length + 1;
 }
 
+// another java solution:
+
+int solution(int[] statues) {
+   return statues.Max() - statues.Min() +1 - statues.Length;
+}
