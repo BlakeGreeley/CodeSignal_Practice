@@ -13,3 +13,13 @@ function solution(statues) {
 
 def solution(statues):
    return max(statues) - min(statues) + 1 - len(statues)
+
+
+// Java answers: 
+
+int solution(int[] sequence) {
+   Arrays.sort(statues);
+   int n = statues[statues.length - 1] - statues[0];
+   return n - statues.length + 1;
+}
+
